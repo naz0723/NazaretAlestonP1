@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Profesor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Formulario para Profesor</h2>
+    <form id="formProfesor">
+        <label for="identificacion">Identificación:</label>
+        <input type="text" id="identificacion" name="identificacion"><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo"><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="1"><br>
+
+        <label>Género:</label>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label>
+        <input type="radio" id="otro" name="genero" value="Otro">
+        <label for="otro">Otro</label><br>
+
+        <label for="departamento">Departamento:</label>
+        <input type="text" id="departamento" name="departamento"><br>
+
+        <label for="añosExperiencia">Años de Experiencia:</label>
+        <input type="number" id="añosExperiencia" name="añosExperiencia" min="0"><br>
+
+        <input type="checkbox" id="terminos" name="terminos">
+        <label for="terminos">Acepto los términos y condiciones</label><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

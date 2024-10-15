@@ -1,0 +1,55 @@
+﻿form {
+    /* Estilos generales para todos los formularios */
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Selectores por ID para personalizar campos individuales */
+#formEstudiante {
+    background-color: #e6f7ff;
+}
+
+#formProfesor {
+    background-color: #fff7e6;
+}
+
+#formUsuario {
+    background-color: #f9f0ff;
+}
+
+/* Selectores por atributo para dar estilo a los campos según el tipo */
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    margin: 0 10px 0 0;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Selectores por clase para aplicar estilos compartidos */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background-color: #45a049;
+    }
+
