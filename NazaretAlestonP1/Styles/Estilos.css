@@ -1,14 +1,56 @@
 ﻿form {
-    /* Estilos generales para todos los formularios */
+
     background-color: #f2f2f2;
     padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    border-radius: 15px;
+    max-width: 450px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Selectores por ID para personalizar campos individuales */
+    form:hover {
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+
+/* Campos generales de texto, email y número */
+input[type="text"], input[type="email"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+    input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus {
+        border-color: #4CAF50;
+        outline: none;
+        background-color: #fff;
+    }
+
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
 #formEstudiante {
     background-color: #e6f7ff;
 }
@@ -21,35 +63,76 @@
     background-color: #f9f0ff;
 }
 
-/* Selectores por atributo para dar estilo a los campos según el tipo */
-input[type="text"], input[type="email"], input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-input[type="radio"] {
-    margin: 0 10px 0 0;
-}
-
-input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-/* Selectores por clase para aplicar estilos compartidos */
 button {
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-size: 16px;
     cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
     button:hover {
         background-color: #45a049;
+        transform: scale(1.05);
     }
 
+
+form small {
+    display: block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+
+input:invalid {
+    border-color: #e74c3c;
+}
+
+    input:invalid:focus {
+        background-color: #fee;
+    }
+
+
+input[type="radio"]:checked + label {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 600px) {
+    form {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    input[type="text"], input[type="email"], input[type="number"], button {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
